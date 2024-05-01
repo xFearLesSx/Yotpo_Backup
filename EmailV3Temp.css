@@ -1,0 +1,26 @@
+h1,
+h2,
+h3,
+h4,
+p,
+td,
+input,
+textarea,
+button,
+div,
+label {
+    font-family: 'Arial', sans-serif !important;
+}
+
+#review_content,
+#review-title-input,
+textarea.textarea {
+    border-color: #000 !important;
+    width: 100% !important;
+    box-sizing: border-box;
+}
+
+.stars-rating-container.es-table,
+.custom-questions-container .full-width.es-table {
+    width: 100% !important;
+}

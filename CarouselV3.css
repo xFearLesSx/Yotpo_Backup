@@ -1,0 +1,63 @@
+:root {
+    --YotpoPrimaryColor: #000;
+    --YotpoSecondaryColor: #DEBDE8;
+    --YotpoPrimaryFont:'ITC Avant Garde Gothic Std', var(--YotpoFallbackFont);
+    --YotpoSecondaryFont:'ITC Avant Garde Gothic Std Demi', var(--YotpoFallbackFont);
+    --YotpoFallbackFont: sans-serif;
+}
+
+#yotpo-reviews-carousel-widget * {
+	font-family: var(--YotpoPrimaryFont) !important;
+}
+
+#yotpo-reviews-carousel-widget .reviews-carousel-card-container {
+    border-color: var(--YotpoPrimaryColor);
+    border-radius: 0;
+}
+
+#yotpo-reviews-carousel-widget .reviews-carousel-card-container[class*="mobile"] {
+    width: 300px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+#yotpo-reviews-carousel-widget .reviews-carousel-card-container .reviewer-info {}
+
+#yotpo-reviews-carousel-widget .reviews-carousel-card-container .reviewer-info .reviewer-status-text {
+    color: var(--YotpoPrimaryColor);
+}
+
+#yotpo-reviews-carousel-widget .reviews-carousel-card-container .review-date {
+    color: var(--YotpoPrimaryColor);
+}
+
+#yotpo-reviews-carousel-widget .reviews-carousel-card-container .reviews-carousel-card-review-product-container {}
+
+#yotpo-reviews-carousel-widget .reviews-carousel-card-container .reviews-carousel-card-review-product-container .review-product-name {
+    color: var(--YotpoPrimaryColor);
+}
+
+#yotpo-reviews-carousel-widget .reviews-carousel-card-container .review-content {}
+
+#yotpo-reviews-carousel-widget .reviews-carousel-card-container .review-content span {
+    font-weight: 700 !important;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 1px;
+    font-size: inherit !important;
+    margin: 0;
+}
+
+#yotpo-reviews-carousel-widget .glide__slide {
+    margin: 0 auto !important;
+}
+
+#yotpo-reviews-carousel-widget .reviews-carousel-reviews-by-yotpo {}
+
+#yotpo-reviews-carousel-widget .reviews-carousel-reviews-by-yotpo path {
+    fill: var(--YotpoPrimaryColor);
+}
+
+#yotpo-reviews-carousel-widget .yotpo-reviews-carousel-widget-container.yotpo-reviews-carousel-widget-mobile-mode .yotpo-reviews-carousel-reviews-by-yotpo-seo {
+	width: 100%;
+}

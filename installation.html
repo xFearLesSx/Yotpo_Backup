@@ -1,0 +1,47 @@
+<!-- reviews widget -->
+<div class="yotpo-widget-instance" 
+data-yotpo-instance-id="xxxxxx" 
+data-yotpo-product-id="{{product.id}}"
+data-yotpo-name="{{ product.title | escape }}" 
+data-yotpo-url="{{ shop.url }}{{ product.url }}" 
+data-yotpo-image-url="{{ product.featured_image | product_img_url: "large" |replace: '?', '%3F' | replace: '&','%26'}}" 
+data-yotpo-description="{{ product.description | escape }}">
+</div>
+main-widget
+
+<!-- v3 star rating -->
+<div class="yotpo-widget-instance" 
+data-yotpo-instance-id="xxxxxx" 
+data-yotpo-product-id="{{product.id}}" 
+data-yotpo-cart-product-id="{{item.product.id}}" 
+data-yotpo-section-id="{{template.name}}">
+</div>
+
+<!-- v2 star rating -->
+yotpo bottomLine
+<div class="yotpo bottomLine"
+data-product-id="{{ product.id }}">
+</div>
+
+<!-- v3 seo -->
+<div class="yotpo-widget-instance" 
+data-yotpo-instance-id="xxxxxx" 
+data-yotpo-product-id="Product ID">
+</div>
+
+<!-- promoted products -->
+<div class="yotpo-widget-instance" 
+data-yotpo-instance-id="xxxxxx" 
+data-yotpo-product-id="{{product.id}}" 
+data-yotpo-cart-product-id="{{item.product.id}}">
+</div>
+
+<!-- v3 carousel -->
+<div class="yotpo-widget-instance" 
+data-yotpo-instance-id="xxxxxx" 
+data-yotpo-product-id="{{product.id}}" 
+data-yotpo-cart-product-id="{{item.product.id}}">
+</div>
+
+<!-- script to add -->
+<script src="https://cdn-widgetsrepository.yotpo.com/v1/loader/xxxxxxxxxx?languageCode={{ localization.language.iso_code | escape }}"  async></script>

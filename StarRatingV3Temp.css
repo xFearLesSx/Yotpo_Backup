@@ -1,0 +1,23 @@
+[class*="yotpo-display-"][class*="yotpo-device-"] * {
+    font-family: 'Lato', sans-serif !important;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"] .yotpo-sr-bottom-line-summary {
+    flex-direction: row !important;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"] .yotpo-sr-bottom-line-summary {
+    gap: 10px !important;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"] .yotpo-sr-bottom-line-text {
+    line-height: 15px !important;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"] .star-container {
+    margin-right: 3.5px;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"] .yotpo-sr-bottom-line-summary > div[aria-label*="5 star rating"] {
+    margin-right: 0 !important;
+}

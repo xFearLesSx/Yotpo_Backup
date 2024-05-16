@@ -1,0 +1,6 @@
+<div class="custom-checkbox-wrapper {{$ctrl.context}}-wrapper">
+    <input type="checkbox" id="{{$ctrl.randomPrefix}}-{{$ctrl.context}}" class="custom-checkbox-input {{$ctrl.context}}-input" ng-class="{error: $ctrl.showError()}" ng-model="$ctrl.checked" ng-change="$ctrl.notifyUpdate()" data-cy="custom-checkbox-input"/>
+    <label class="custom-checkbox-label {{$ctrl.context}}-label" for="{{$ctrl.randomPrefix}}-{{$ctrl.context}}" data-cy="custom-checkbox-option">
+        <ng-transclude></ng-transclude>
+    </label>
+</div>

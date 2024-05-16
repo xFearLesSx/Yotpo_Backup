@@ -1,0 +1,85 @@
+<div>
+    <form ng-submit="submitForm(true)" class="ui form" ng-class="{ disabled: showReviewBody && isSubmitClicked }" data-cy="review-form">
+        <review-header ng-if="showReviewBody" star-color="{{starsColor}}" star-rating-value="baseFields.reviewScore" show-validation-errors="!cleanForm" show-product-image="showProductImage" product-image-url="{{productImageUrl}}" product-name="{{productName}}">
+        </review-header>
+
+        <div class="review-body" ng-if="showReviewBody" ng-class="{collapsed: !expanded, loading: expanded && !loaded, 'animation-done': expandAnimationDone}">
+            <div class="title-and-content">
+                <loading-screen class="loading-container" review-body-mode="true" ng-show="expanded && !loaded"></loading-screen>
+                <div ng-if="reviewTitleRequired && !suggestedTopicsEnabled" class="review-title-container" ng-class="{error: showError(baseFields.reviewTitle, 'title')}" data-cy="title-without-topics">
+                    <input class="review-title" name="review_title" aria-label="Review title" type="text" ng-model="baseFields.reviewTitle" placeholder="{{'REVIEW.TITLE_PLACEHOLDER' | translate}}" data-cy="title-free-text-input">
+                </div>
+                <div class="review-content-container" ng-class="{error: showError(baseFields.reviewContent, 'content'), 'small-spacing': suggestedTopicsEnabled}">
+                    <textarea ng-if="!suggestedTopicsEnabled" rows="4" class="review-content yotpo-textarea" aria-label="Review content" type="text" ng-model="baseFields.reviewContent" name="review_content" placeholder="{{'REVIEW.CONTENT_PLACEHOLDER' | translate}}" data-cy="content-without-topics-free-text-input"></textarea>
+                    <review-content ng-if="loaded && suggestedTopicsEnabled" topics="suggestedTopics" progress-bar-enabled="showSuggestedTopicsProgressBar" initial-content="baseFields.reviewContent" notify-content-changed="reviewContentChanged(content)" notify-topic-checked="topicChecked(topic)"
+                    notify-topic-unchecked="topicUnchecked(topic)"></review-content>
+                    <span class="content-error" ng-bind="'REVIEW.CONTENT_REQUIRED' | translate"></span>
+                </div>
+                <div ng-if="reviewTitleRequired && suggestedTopicsEnabled" class="review-title-container" ng-class="{error: showError(baseFields.reviewTitle, 'title')}" data-cy="title-with-topics">
+                    <input class="review-title" name="review_title" aria-label="Review title" type="text" ng-model="baseFields.reviewTitle" placeholder="{{'REVIEW.TITLE_PLACEHOLDER' | translate}}" data-cy="title-free-text-input">
+                </div>
+                <div ng-if="showDisplayNameAndEmail" class="display-name-container" ng-class="{error: showError(baseFields.displayName, 'display_name')}" data-cy="display-name">
+                    <input class="review-display-name" name="display_name" aria-label="Your name" type="text" ng-model="baseFields.displayName" placeholder="{{'REVIEW.DISPLAY_NAME_PLACEHOLDER' | translate}}" data-cy="display-name-free-text-input">
+                    <span class="content-error" ng-bind="'REVIEW.NAME_REQUIRED' | translate"></span>
+                </div>
+                <div ng-if="showDisplayNameAndEmail" class="email-container" ng-class="{error: showError(baseFields.email, 'email') || !validEmailAddress}">
+                    <input class="review-email" name="email" aria-label="email" type="text" ng-model="baseFields.email" placeholder="{{'REVIEW.EMAIL_PLACEHOLDER' | translate}}" data-cy="email-text-input">
+                    <span class="content-error" ng-bind="'REVIEW.EMAIL_REQUIRED' | translate"></span>
+                    <span ng-if="!showError(baseFields.email, 'email') && validEmailAddress" class="email-will-be-send" ng-bind="'REVIEW.EMAIL_WILL_BE_SEND' | translate"></span>
+                </div>
+            </div>
+            <media-uploader ng-if="loaded && (imagesEnabled || videosEnabled) && !thankYouMode" images-enabled="imagesEnabled" videos-enabled="videosEnabled" app-key="{{appKey}}" review-creation-token="{{reviewerToken}}" images-limit="maxImagesPerReview" videos-limit="maxVideosPerReview"
+            video-support-settings="videoSupportSettings" videos-max-duration-in-minutes="videosMaxDurationInMinutes" notify-media-added="mediaAdded(id, error, type)" notify-update-media-status="updateMediaStatus(id, inProgress, uploaded, url, videoSubmitCallback)"
+            notify-media-removed="mediaRemoved(id)" demo-mode="demoMode">
+            </media-uploader>
+            <custom-fields fields="customFields" allow-show-errors="!cleanForm" value-updated-callback="updateCustomFieldValue(slug, value)">
+            </custom-fields>
+
+            <custom-checkbox ng-if="termsAndConditionsUrl" class="consent-checkbox" initial-value="termsAndConditionsCheckboxChecked" on-update="termsAndConditionsCheckboxChanged(checked)" allow-show-errors="!cleanForm" context="terms-and-conditions" data-cy="terms-and-conditions">
+                <span ng-bind="'REVIEW.CONSENT_CHECKBOX.I_AGREE' | translate"></span>
+                <span><a class="consent-checkbox-link" ng-href="{{termsAndConditionsUrl}}" target="_blank" ng-bind="'REVIEW.CONSENT_CHECKBOX.TERMS_AND_CONDITIONS' | translate" data-cy="link"></a></span>
+                <span class="mandatory-mark">*</span>
+            </custom-checkbox>
+
+            <custom-checkbox ng-if="privacyPolicyUrl" class="consent-checkbox" initial-value="privacyPolicyCheckboxChecked" on-update="privacyPolicyCheckboxChanged(checked)" allow-show-errors="!cleanForm" context="privacy-policy" data-cy="privacy-policy">
+                <span class="privacyText" ng-bind="'REVIEW.CONSENT_CHECKBOX.I_AGREE' | translate"></span>
+                <span class="policy_link"><a class="consent-checkbox-link" ng-href="{{privacyPolicyUrl}}" target="_blank" ng-bind="'REVIEW.CONSENT_CHECKBOX.PRIVACY_POLICY' | translate" data-cy="link"></a></span>
+                <span class="mandatory-mark">*</span>
+            </custom-checkbox>
+
+            <div ng-show="loaded" class="form-field submit-container">                
+                <button class="submit-review-button regular-button" name="commit" ng-disabled="mediaInProgressExists()" data-cy="submit-review-button">
+                    <span ng-if="!mediaInProgressExists()" ng-bind="'REVIEW.SUBMIT' | translate"></span>
+                    <span ng-if="mediaInProgressExists()" ng-bind="'REVIEW.MEDIA.UPLOAD_IN_PROGRESS' | translate"></span>
+                </button>
+            </div>
+        </div>
+
+        <div ng-if="(imagesEnabled || videosEnabled) && mediaStandAloneMode && !thankYouMode">
+            <h1 class="images-request">
+                <span ng-bind="'REVIEW.MEDIA.REQUEST' | translate"></span>
+                <span class="images-request-product-name" ng-bind-html="productName"></span>
+            </h1>
+
+            <media-uploader ng-if="(imagesEnabled || videosEnabled)" app-key="{{appKey}}" images-enabled="imagesEnabled" videos-enabled="videosEnabled" review-creation-token="{{reviewerToken}}" images-limit="maxImagesPerReview" videos-limit="maxVideosPerReview" video-support-settings="videoSupportSettings"
+            videos-max-duration-in-minutes="videosMaxDurationInMinutes" notify-media-added="mediaAdded(id, error, type)" notify-update-media-status="updateMediaStatus(id, inProgress, uploaded, url, videoSubmitCallback)" notify-media-removed="mediaRemoved(id)"
+            demo-mode="demoMode" email-settings="emailSettings">
+            </media-uploader>
+
+            <div ng-if="totalMediaSize() > 0" class="submit-media-container">
+                <button type="button" class="submit-media-button" ng-disabled="mediaInProgressExists() || mediaWithErrorExists()" ng-click="submitMedia()">
+                    <span ng-if="!mediaInProgressExists()" ng-bind="'REVIEW.MEDIA.SUBMIT' | translate"></span>
+                    <span ng-if="mediaInProgressExists()" ng-bind="'REVIEW.MEDIA.UPLOAD_IN_PROGRESS' | translate"></span>
+                </button>
+            </div>
+
+            <div class="skip-images" ng-click="noThanksClicked()" ng-bind="'REVIEW.MEDIA.SKIP' | translate" role="button" tabindex="0"></div>
+        </div>
+
+        <div ng-if="thankYouMode">
+            <thank-you product-name="{{productName}}" notify-loaded="thankYouLoaded()" notify-share-clicked="shareClicked(platform)" submission-data="submissionData"></thank-you>
+        </div>
+    </form>
+
+    <div ng-include="'views/partials/review/spinner.html'" ng-if="showReviewBody && isSubmitClicked"></div>
+</div>

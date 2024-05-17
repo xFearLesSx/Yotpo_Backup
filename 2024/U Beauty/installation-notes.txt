@@ -1,0 +1,23 @@
+Layout
+- theme.liquid - update Script.
+
+Templates
+- page.reviews.json - add seo
+
+Sections
+- yotpo-v3-seo.liquid - add seo
+- shogun-custom-642c54c81b423400cfae51e6.liquid - update star rating
+
+Snippets
+- custom-product-meta.liquid - update star rating
+- product-meta.liquid - update star rating
+- ub-full-width-products.liquid - update star rating
+- ub-product-2023.liquid - update star rating
+- ub-product-reviews.liquid - update star rating
+- ub-product.liquid - update star rating
+- ub-product2023-main.liquid - update star rating
+- ub-subscription-product.liquid - update star rating
+
+Assets
+- ub-old-theme-yotpo.js - updated yotpo version
+- ub-product-reviews.js - updated- yotpo-version

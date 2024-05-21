@@ -1,0 +1,181 @@
+@font-face {
+    font-family: 'Acumin';
+    src: url(//www.simmsfishing.com/cdn/shop/t/269/assets/acuminpro-regular-webfont.eot?v=129201642970285541601699529792);
+    src:
+      url("//www.simmsfishing.com/cdn/shop/t/269/assets/acuminpro-regular-webfont.woff?v=109866018601579549841699529793#iefix") format('embedded-opentype'),
+      url(//www.simmsfishing.com/cdn/shop/t/269/assets/acuminpro-regular-webfont.ttf?v=140961386677550992091699529793) format('truetype'),
+      url("//www.simmsfishing.com/cdn/shop/t/269/assets/acuminpro-regular-webfont.svg?v=79605047085491933481699529792#acuminpro-regular") format('svg'),
+      url(//www.simmsfishing.com/cdn/shop/t/269/assets/acuminpro-regular-webfont.woff?v=109866018601579549841699529793) format("woff"),
+      url(//www.simmsfishing.com/cdn/shop/t/269/assets/acuminpro-regular-webfont.woff2?v=173882805320833771651699529794) format("woff2");
+    font-weight: 400;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Acumin';
+    src: url(//www.simmsfishing.com/cdn/shop/t/269/assets/acuminpro-bold-webfont.eot?v=126966254332328785791699529789);
+    src:
+      url("//www.simmsfishing.com/cdn/shop/t/269/assets/acuminpro-bold-webfont.woff?v=93508046867555235671699529791#iefix") format('embedded-opentype'),
+      url(//www.simmsfishing.com/cdn/shop/t/269/assets/acuminpro-bold-webfont.ttf?v=182542197679546158221699529791) format('truetype'),
+      url("//www.simmsfishing.com/cdn/shop/t/269/assets/acuminpro-bold-webfont.svg?v=44199202583562039701699529790#acuminpro-bold") format('svg'),
+      url(//www.simmsfishing.com/cdn/shop/t/269/assets/acuminpro-bold-webfont.woff?v=93508046867555235671699529791) format("woff"),
+      url(//www.simmsfishing.com/cdn/shop/t/269/assets/acuminpro-bold-webfont.woff2?v=117393486245287349971699529792) format("woff2");
+    font-weight: bold;
+    font-display: swap;
+      }
+
+:root {
+    --YotpoPrimaryColor: #546264;
+    --YotpoSecondaryColor: #7f28c4;
+    --YotpoPrimaryFont:'Acumin', var(--YotpoFallbackFont);
+    --YotpoSecondaryFont:'Acumin', var(--YotpoFallbackFont);
+    --YotpoFallbackFont: sans-serif;
+    --YotpoLogoIconColor : var(--YotpoSecondaryColor);
+    --YotpoAvatarBackgroundColor: var(--YotpoSecondaryColor);
+    --YotpoVerifiedIconBackgroundColor: #1cc286;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style] * {
+    font-family: var(--YotpoPrimaryFont) !important;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style] #newReviewFormModal,
+[class*="yotpo-display-"][class*="yotpo-device-"][style] .modal-backdrop.yotpo-media-modal,
+[class*="yotpo-display-"][class*="yotpo-device-"][style] #yotpo-mobile-filters-popup,
+[class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-qna-modal-backdrop {
+    z-index: 999999999999999 !important;
+}
+
+/* Fixing the space on Read More when it's first on the line */
+[class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-review .yotpo-review-center-panel .yotpo-review-content .yotpo-read-more-text {
+    display: inline;
+    margin-right: 5px;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-review .yotpo-review-center-panel .yotpo-read-more {
+    margin: 0;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+/* Fixing the space on Read More when it's first on the line */
+
+/* Fix code on Helpful Section issue in iPhone */
+[class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-reviews-list > .yotpo-review-votes-wrapper .yotpo-review-votes-icons-wrapper,
+[class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-reviews-list > .yotpo-review-votes-wrapper .yotpo-review-votes-icons-wrapper .yotpo-review-votes-icons-container {
+    display: flex;
+    gap: 5px;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-reviews-list > .yotpo-review-votes-wrapper .yotpo-review-votes-icons-wrapper .yotpo-review-votes-icons-container .yotpo-review-votes-icons {
+    margin: 0;
+}
+/* Fix code on Helpful Section issue in iPhone */
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style]  .yotpo-reviews-icon path {
+    fill: var(--YotpoLogoIconColor);
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-head {
+    justify-content: end;
+}
+
+/* Buttons */
+#yotpo-reviews-main-widget[class*="yotpo-display-"][class*="yotpo-device-"] [id*="-widget-btn"],
+#yotpo-questions-and-answers[class*="yotpo-display-"][class*="yotpo-device-"] [id*="-widget-btn"],
+[class*="yotpo-display-"][class*="yotpo-device-"][style] #newReviewFormModal #yotpo-modal.yotpo-form-complete .yotpo-form-complete .yotpo-shop-complete,
+[class*="yotpo-display-"][class*="yotpo-device-"][style] #newReviewFormModal footer.form-footer .yotpo-new-review-submit,
+[class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-question-form .form-footer .yotpo-question-submit,
+[class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-vertical-pagination .yotpo-reviews-pagination-item,
+[class*="yotpo-display-"][class*="yotpo-device-"].yotpo-device-mobile .yotpo-vertical-pagination .yotpo-pagination-item {
+    background: #fff;
+    color: var(--YotpoPrimaryColor);
+    border: 1px solid var(--YotpoPrimaryColor);
+    border-radius: 5px;
+    width: auto;
+    height: auto;
+    line-height: 1;
+    font-weight: 700;
+    padding: 12px 30px;
+    text-decoration: none;
+}
+
+#yotpo-reviews-main-widget[class*="yotpo-display-"][class*="yotpo-device-"] [id*="-widget-btn"]#yotpo-main-widget-btn {
+    width: auto !important;
+    height: auto !important;
+}
+
+#yotpo-questions-and-answers[class*="yotpo-display-"][class*="yotpo-device-"] [class*="-btn-wrapper"] [id*="-widget-btn"] span {
+    color: var(--YotpoPrimaryColor);
+}
+/* Buttons */
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-star-rating-icon {
+    transform: scale(1);
+}
+
+/*  */
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-layout-header-wrapper .yotpo-bottom-line {
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-bottom-line .yotpo-summary-section {}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-bottom-line .yotpo-summary-section .yotpo-bottom-line-summary {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-bottom-line .yotpo-summary-section .yotpo-bottom-line-score {
+    padding: 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-bottom-line .yotpo-summary-section .yotpo-bottom-line-score::after {
+    content: 'out of 5 stars';
+    font-weight: 400;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-bottom-line .yotpo-summary-section .yotpo-bottom-line-right-panel {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-bottom-line .yotpo-summary-section .yotpo-bottom-line-right-panel .yotpo-bottom-line-text {
+    margin: 0;
+    display: none;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style]  .yotpo-bottom-line > .yotpo-vertical-border {
+    display: none;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-bottom-line .yotpo-star-distribution {
+    width: 70%;
+    border: none !important;
+    padding: 0;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-bottom-line .yotpo-bottom-line-question-wrapper-vertical {
+    border: none !important;
+    padding: 0;
+    width: auto;
+    justify-content: flex-end;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-bottom-line .yotpo-summary-section .yotpo-bottom-line-right-panel .star-container {
+    margin-right: 4px;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-bottom-line .yotpo-summary-section .yotpo-bottom-line-right-panel .star-container svg.yotpo-star-rating-icon {
+    width: 21px;
+    height: 21px;
+}

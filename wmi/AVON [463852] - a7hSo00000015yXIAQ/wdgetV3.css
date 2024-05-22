@@ -216,7 +216,10 @@ unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+
     display: none;
 }
 
-[class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-reviews-list .yotpo-review-center-panel .yotpo-review-comment {}
+[class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-reviews-list .yotpo-review-center-panel .yotpo-review-comment {
+    width: 100%;
+    flex-basis: 100%;
+}
 
 [class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-reviews-list .yotpo-review-center-panel .yotpo-review-comment .yotpo-comment-avatar {
     width: 100%;

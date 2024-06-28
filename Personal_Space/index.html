@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>UGC Notes</title>
+    <link rel="icon" type="image/x-icon" href="https://www.yotpo.com/wp-content/themes/yotpo/images/cropped-yotpo-logo-lettermark.png">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+<header>
+    <marquee>This Page is For UGC Notes Purposes Only</marquee>
+</header>
+
+<div class="content">
+    <div class="tabs">
+        <button class="tablinks active" onclick="openTab(event, 'email')"> <span>Email</span> </button>
+        <button class="tablinks" onclick="openTab(event, 'widget')"> <span>Widget</span> </button>
+        <button class="tablinks" onclick="openTab(event, 'landing')"> <span>Landing Page</span> </button>
+      </div>
+    
+      <div id="email" class="tabcontent">
+        <h3>Email Content</h3>
+        <p>This is the content for the Email tab.</p>
+      </div>
+    
+      <div id="widget" class="tabcontent">
+        <h3>Widget Content</h3>
+        <p>This is the content for the Widget tab.</p>
+      </div>
+    
+      <div id="landing" class="tabcontent">
+        <h3>Landing Page Content</h3>
+        <p>This is the content for the Landing Page tab.</p>
+      </div>
+</div>
+
+<footer>
+
+</footer>
+
+</body>
+
+</html>
+
+<script>
+function openTab(evt, tabName) {
+  // Get all elements with class="tabcontent" and hide them
+  var tabcontents = document.getElementsByClassName("tabcontent");
+  for (var i = 0; i < tabcontents.length; i++) {
+    tabcontents[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  var tablinks = document.getElementsByClassName("tablinks");
+  for (var i = 0; i < tablinks.length; i++) {
+    tablinks[i].classList.remove("active");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.classList.add("active");
+}
+</script>

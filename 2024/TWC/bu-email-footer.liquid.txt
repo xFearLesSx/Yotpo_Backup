@@ -1,0 +1,169 @@
+{%- comment -%}
+<!-- Appears at the bottom of your email and includes unsubscribe link -->
+{%- endcomment -%}
+
+<table class="ftr_holder" cellspacing="0" cellpadding="0" border="0" role="none" width="100%" align="center">
+
+ <!-- { %- if product_name and submit_url or formless_call_to_action -%}
+  <tr height="40"></tr>
+  <tr>
+    <td>
+      <table class="ftr_review_tips" cellspacing="0" cellpadding="0" border="0" role="none" width="100%" align="center" bgcolor="#f9f7f2" style="background:#f9f7f2; background-color:#f9f7f2;">
+        <tr>
+          <td height="16" colspan="3">&nbsp;</td>
+        </tr>
+        <tr>
+          <td width="16"></td>
+          <td>
+            <h3 class="heading">Review Writing Tips</h3>
+            <p>
+              <br>
+              <span>Offer detailed feedback:</span> A good review provides enough information for others to understand your experience, both positive and negative.
+              <br>
+              <span>Be specific and honest:</span> The more details you provide, the more helpful your review becomes. Avoid being overly brief.
+              <br>
+              <span>Personal information and links:</span> Avoid including names, phone numbers, or addresses in your reviews to maintain privacy.
+            </p>
+          </td>
+          <td width="16"></td>
+        </tr>
+        <tr height="24"></tr>
+      </table>
+    </td>
+  </tr>
+  { %- elsif submit_url or formless_call_to_action -%}
+  <tr height="40"></tr>
+  <tr>
+    <td>
+      <table class="ftr_review_tips" cellspacing="0" cellpadding="0" border="0" role="none" width="100%" align="center" bgcolor="#f9f7f2" style="background:#f9f7f2; background-color:#f9f7f2;">
+        <tr>
+          <td height="16" colspan="3">&nbsp;</td>
+        </tr>
+        <tr>
+          <td width="16"></td>
+          <td>
+            <h3 class="heading">Review Writing Tips</h3>
+            <p>
+              <br>
+              <span>Offer detailed feedback:</span> A good review provides enough information for others to understand your experience, both positive and negative.
+              <br>
+              <span>Be specific and honest:</span> The more details you provide, the more helpful your review becomes. Avoid being overly brief.
+              <br>
+              <span>Personal information and links:</span> Avoid including names, phone numbers, or addresses in your reviews to maintain privacy.
+            </p>
+          </td>
+          <td width="16"></td>
+        </tr>
+        <tr height="24"></tr>
+      </table>
+    </td>
+  </tr>    
+  { %- endif -%}
+
+  { %- if product_name and submit_url or formless_call_to_action -%}
+  <tr height="40"></tr>
+  { %- elsif submit_url or formless_call_to_action -%}
+  <tr height="40"></tr>
+  { %- elsif coupon_link -%}
+  <tr height="40"></tr>
+  { %- elsif comment.content -%} 
+
+  { %- endif -%} -->
+
+  <tr>
+    <td>
+      <table class="ftr_social_media" cellspacing="0" cellpadding="0" border="0" role="none" width="100%" align="center">
+        <tr>
+          <td align="center">
+            <h2 >Explore our socials</h2>
+          </td>
+        </tr>
+        <tr height="16"></tr>
+        <tr>
+          <td>
+            <table cellspacing="0" cellpadding="0" border="0" role="none" width="240" align="center">
+              <tr>
+                <td align="center" width="20">
+                  <a  href="https://www.instagram.com/thewhitecompany" target="_blank">
+                    <img src="https://cdn.shopify.com/s/files/1/0708/4605/4708/files/TWC_instagram.svg" width="20">
+                    <!--[if !mso]><! -->
+                    <!--img class="dark" src="https://cdn.shopify.com/s/files/1/0708/4605/4708/files/dark-TWC_instagram_cf644515-cfa8-4e32-8f60-b630bef76ecb.svg?v=1705402431" width="20"-->
+                    <!--<![endif]-->
+                  </a>
+                </td>
+                <td width="24"></td>
+                <td align="center" width="20">
+                  <a  href="https://www.tiktok.com/@thewhitecompany" target="_blank">
+                    <img src="https://cdn.shopify.com/s/files/1/0708/4605/4708/files/TWC_tiktok.svg" width="20">
+                    <!--[if !mso]><! -->
+                    <!--img class="dark" src="https://cdn.shopify.com/s/files/1/0708/4605/4708/files/dark-TWC_tiktok-svg.svg" width="20"-->
+                    <!--<![endif]-->
+                  </a>
+                </td>
+          <td width="24"></td>
+                <td align="center" width="20">
+                  <a  href="https://twitter.com/TheWhiteCompany" target="_blank">
+                    <img src="https://cdn.shopify.com/s/files/1/0708/4605/4708/files/TWC_twitter.svg" width="20">
+                    <!--img class="dark" src="https://cdn.shopify.com/s/files/1/0708/4605/4708/files/dark-TWC_twitter-svg.svg" width="20"-->
+                  </a>
+                </td>
+          <td width="24"></td>
+                <td align="center" width="20">
+                  <a  href="https://www.facebook.com/thewhitecompany/" target="_blank">
+                    <img src="https://cdn.shopify.com/s/files/1/0708/4605/4708/files/TWC_facebook.svg" width="20">
+                    <!--img class="dark" src="https://cdn.shopify.com/s/files/1/0708/4605/4708/files/dark-TWC_facebook-svg.svg" width="20"-->
+                  </a>
+                </td>
+    <td width="24"></td>
+                <td align="center" width="20">
+                  <a  href="https://www.pinterest.ph/thewhitecompany/" target="_blank">
+                    <img src="https://cdn.shopify.com/s/files/1/0708/4605/4708/files/TWC_pinterest.svg" width="20">
+                    <!--img class="dark" src="https://cdn.shopify.com/s/files/1/0708/4605/4708/files/dark-TWC_pinterest-svg.svg" width="20"-->
+                  </a>
+                </td>
+    <td width="24"></td>
+                <td align="center" width="20">
+                  <a  href="https://www.youtube.com/thewhitecompany" target="_blank">
+                    <img src="https://cdn.shopify.com/s/files/1/0708/4605/4708/files/TWC_youtube.svg" width="20">
+                    <!--img class="dark" src="https://cdn.shopify.com/s/files/1/0708/4605/4708/files/dark-TWC_youtube-svg.svg" width="20"-->
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>        
+      </table>
+    </td>
+  </tr>
+  <!--tr height="40"></tr-->
+  <tr>
+    <td>
+      <table class="ftr_info" cellspacing="0" cellpadding="0" border="0" role="none" width="100%" align="center">
+        <tr height="20"></tr>
+        <tr>
+          <td>
+            <h4 class="heading">Terms & Conditions</h4>
+            <p>              
+              <br>
+              By engaging with our Ratings and Reviews email, you agree to share your genuine experiences and opinions related to the products or services provided. Please ensure that your feedback is accurate and based on your own encounters. We value diverse perspectives but request that your content remains respectful and free from offensive language. By submitting your review, you grant us the right to use, modify, or delete it as needed. Any content that violates ethical standards or platform policies will be removed. Your participation contributes to a vibrant community, and we appreciate your honest and thoughtful contributions.
+
+              {%- if link_didnt_get_product_yet -%}
+              <br><br>
+              Too soon? If you have not received the product yet {{ 'Click here.' | link_to: link_didnt_get_product_yet }}
+              {%- endif -%}
+
+              <br><br>
+              Replying to this email will not reach {{store_name}}. If you have a specific problem which need to be address, please <a href="https://www.thewhitecompany.com/uk/help/contact-us" target="_blank">contact The White Company*</a> directly. 
+
+              {%- if unsubscribe_url -%}
+              <br><br>
+              {{ 'Click here' | link_to: unsubscribe_url }} to unsubscribe from our emails.
+              {%- endif -%}              
+            </p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+</table>

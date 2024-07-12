@@ -1,0 +1,119 @@
+.yotpo.yotpo-pictures-widget {}
+
+.yotpo.yotpo-pictures-widget [class*="yotpo-gallery-"].yotpo-slider-wrapper {}
+
+.yotpo.yotpo-pictures-widget [class*="yotpo-gallery-"].yotpo-slider-wrapper .yotpo-slider {
+    padding: 0 0 70px;
+}
+
+.yotpo.yotpo-pictures-widget [class*="yotpo-gallery-"].yotpo-slider-wrapper .yotpo-slider .y-arrows {
+    bottom: 0;
+    width: 80px;
+    height: auto;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.yotpo.yotpo-pictures-widget [class*="yotpo-gallery-"].yotpo-slider-wrapper .yotpo-slider .y-arrows [class*="arrows-wrapper-"] {
+    height: auto;
+    position: static;
+}
+
+.yotpo.yotpo-pictures-widget [class*="yotpo-gallery-"].yotpo-slider-wrapper .yotpo-slider .y-arrows .arrows-wrapper-left {}
+
+.yotpo.yotpo-pictures-widget [class*="yotpo-gallery-"].yotpo-slider-wrapper .yotpo-slider .y-arrows .arrows-wrapper-right {}
+
+.yotpo.yotpo-pictures-widget [class*="yotpo-gallery-"].yotpo-slider-wrapper .yotpo-slider .y-arrows [class*="arrows-wrapper-"] > .yotpo-icon {
+    background: none !important;
+    opacity: 1;
+    position: static;
+    height: auto;
+    border-radius: 0;
+    width: auto !important;
+    line-height: 1;
+}
+
+.yotpo.yotpo-pictures-widget [class*="yotpo-gallery-"].yotpo-slider-wrapper .yotpo-slider .y-arrows [class*="arrows-wrapper-"] > .yotpo-icon::before {
+    filter: unset;
+    margin: 0;
+    line-height: 1;
+}
+
+.yotpo.yotpo-pictures-widget [class*="yotpo-gallery-"].yotpo-slider-wrapper .yotpo-slider .y-arrows .arrows-wrapper-left > .yotpo-icon::before {
+    right: 0;
+}
+
+.yotpo.yotpo-pictures-widget [class*="yotpo-gallery-"].yotpo-slider-wrapper .yotpo-slider .y-arrows .arrows-wrapper-right > .yotpo-icon::before {
+    left: 0;
+}
+
+.yotpo.yotpo-lightbox-wrapper {}
+
+.yotpo.yotpo-lightbox-wrapper .yotpo.yotpo-modal {}
+
+.yotpo.yotpo-lightbox-wrapper .yotpo.yotpo-modal.yotpo-modal-active .yotpo-lightbox-container.yotpo-active-display {}
+
+.yotpo.yotpo-lightbox-wrapper .yotpo.yotpo-modal.yotpo-modal-active .yotpo-lightbox-container.yotpo-active-display .yotpo-lightbox-arrows {}
+
+.yotpo.yotpo-lightbox-wrapper .yotpo.yotpo-modal.yotpo-modal-active .yotpo-lightbox-container.yotpo-active-display .yotpo-lightbox-slider-container {}
+
+.yotpo.yotpo-lightbox-wrapper .yotpo.yotpo-modal.yotpo-modal-active .yotpo-lightbox-container.yotpo-active-display .yotpo-lightbox-content-container {}
+
+.yotpo.yotpo-lightbox-wrapper .yotpo.yotpo-modal.yotpo-modal-active .yotpo-lightbox-container.yotpo-active-display > .yotpo-label.yotpo-small-box {}
+
+.yotpo.yotpo-lightbox-wrapper .yotpo.yotpo-modal.yotpo-modal-active .yotpo-lightbox-container.yotpo-active-display .yotpo-lightbox-content-container .yotpo-lightbox-products-container {
+    margin: 0;
+}
+
+.yotpo.yotpo-lightbox-wrapper .yotpo.yotpo-modal.yotpo-modal-active .yotpo-lightbox-container.yotpo-active-display .yotpo-lightbox-content-container .collapse-text {
+    display: none;
+}
+
+.yotpo.yotpo-lightbox-wrapper .yotpo.yotpo-modal.yotpo-modal-active .yotpo-lightbox-container.yotpo-active-display .yotpo-lightbox-content-container .yotpo-lightbox-products-container .yotpo-lightbox-products-main {}
+
+.yotpo.yotpo-lightbox-wrapper .yotpo.yotpo-modal.yotpo-modal-active .yotpo-lightbox-container.yotpo-active-display .yotpo-lightbox-content-container .yotpo-lightbox-products-container .yotpo-lightbox-products-footer {}
+
+.yotpo.yotpo-lightbox-wrapper .yotpo.yotpo-modal.yotpo-modal-active .yotpo-lightbox-container.yotpo-active-display .yotpo-lightbox-content-container .yotpo-lightbox-products-container .yotpo-lightbox-products-main > .yotpo-lightbox-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 16px;
+}
+
+.yotpo.yotpo-lightbox-wrapper .yotpo.yotpo-modal.yotpo-modal-active .yotpo-lightbox-container.yotpo-active-display .yotpo-lightbox-content-container .yotpo-lightbox-products-container .yotpo-lightbox-products-main > .yotpo-lightbox-product .yotpo-lightbox-product-details {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.yotpo.yotpo-lightbox-wrapper .yotpo.yotpo-modal.yotpo-modal-active .yotpo-lightbox-container.yotpo-active-display .yotpo-lightbox-content-container .yotpo-lightbox-products-container .yotpo-lightbox-products-main > .yotpo-lightbox-product > a {}
+
+.yotpo.yotpo-lightbox-wrapper .yotpo.yotpo-modal.yotpo-modal-active .yotpo-lightbox-container.yotpo-active-display .yotpo-lightbox-content-container .yotpo-lightbox-products-container .yotpo-lightbox-products-main > .yotpo-lightbox-product > a .yotpo-lightbox-product-main-image {
+    border: none;
+}
+
+.yotpo.yotpo-lightbox-wrapper .yotpo.yotpo-modal.yotpo-modal-active .yotpo-lightbox-container.yotpo-active-display .yotpo-lightbox-content-container .yotpo-lightbox-products-container .yotpo-lightbox-products-main > .yotpo-lightbox-product .yotpo-lightbox-product-details .link-to-product-tab {}
+
+.yotpo.yotpo-lightbox-wrapper .yotpo.yotpo-modal.yotpo-modal-active .yotpo-lightbox-container.yotpo-active-display .yotpo-lightbox-content-container .yotpo-lightbox-products-container .yotpo-lightbox-products-main > .yotpo-lightbox-product .yotpo-lightbox-product-details .link-to-product-tab .review-stars {
+    display: none;
+}
+
+.yotpo.yotpo-lightbox-wrapper .yotpo.yotpo-modal.yotpo-modal-active .yotpo-lightbox-container.yotpo-active-display .yotpo-lightbox-content-container .yotpo-lightbox-products-container .yotpo-lightbox-products-main > .yotpo-lightbox-product .yotpo-lightbox-product-details .link-to-product-tab h2.yotpo-lightbox-product-name {
+    width: auto;
+    margin: 0;
+    font-weight: 400;
+}
+
+.yotpo.yotpo-lightbox-wrapper .yotpo.yotpo-modal.yotpo-modal-active .yotpo-lightbox-container.yotpo-active-display .yotpo-lightbox-content-container .yotpo-lightbox-products-container .yotpo-lightbox-products-main > .yotpo-lightbox-product .yotpo-lightbox-product-details .yotpo-lightbox-product-button {
+    background: none;
+    color: #000;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    font-weight: 400 !important;
+    width: 100%;
+    height: auto;
+    line-height: 1;
+}

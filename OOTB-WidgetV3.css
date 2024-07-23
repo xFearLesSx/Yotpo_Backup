@@ -76,14 +76,51 @@
 
 [class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-header-container .yotpo-layout-header-wrapper {}
 
-[class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-header-container .yotpo-layout-header-wrapper .yotpo-bottom-line {}
-
-[class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-header-container .yotpo-layout-header-wrapper .yotpo-summary-section {
+[class*="yotpo-display-"][class*="yotpo-device-"][style].yotpo-device-laptop .yotpo-header-container .yotpo-layout-header-wrapper {
+    flex-wrap: wrap;
+    row-gap: 30px;
 }
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-header-container .yotpo-layout-header-wrapper .yotpo-bottom-line {
+    align-items: center;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style].yotpo-device-laptop .yotpo-header-container .yotpo-layout-header-wrapper .yotpo-bottom-line {
+    margin: 0;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-header-container .yotpo-layout-header-wrapper .yotpo-bottom-line > .yotpo-vertical-border {
+    display: none;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-header-container .yotpo-layout-header-wrapper .yotpo-bottom-line .yotpo-star-distribution {
+    /* border: none !important; */
+    border-left: 1px solid #eaeaea;
+    padding: 0 35px 0;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style].yotpo-device-mobile .yotpo-header-container .yotpo-layout-header-wrapper .yotpo-bottom-line .yotpo-star-distribution {
+    padding: 0;
+    border: none;
+    margin-top: 20px;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style].yotpo-device-mobile .yotpo-header-container .yotpo-layout-header-wrapper .yotpo-bottom-line .yotpo-star-distribution .yotpo-progress-bar {
+    margin-right: 0;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style].yotpo-device-laptop .yotpo-header-container .yotpo-layout-header-wrapper .yotpo-bottom-line .yotpo-star-distribution {
+    border: none !important;
+    padding: 0;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-header-container .yotpo-layout-header-wrapper .yotpo-summary-section {}
 
 [class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-header-container .yotpo-layout-header-wrapper .yotpo-summary-section .yotpo-bottom-line-summary {
     column-gap: 10px;
-    border-right: 1px solid #eaeaea;
+    /* border-right: 1px solid #eaeaea; */
     padding: 0 40px 0 0;
 }
 
@@ -106,7 +143,11 @@
     flex-direction: column;
     row-gap: 10px;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style].yotpo-device-mobile .yotpo-header-container .yotpo-layout-header-wrapper .yotpo-summary-section .yotpo-bottom-line-summary .yotpo-bottom-line-right-panel {
+    align-items: center;    
 }
 
 [class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-header-container .yotpo-layout-header-wrapper .yotpo-summary-section .yotpo-bottom-line-summary .yotpo-bottom-line-right-panel .yotpo-bottom-line-text {
@@ -183,10 +224,24 @@
 
 [class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-filters-container .yotpo-filters-top-panel {}
 
+[class*="yotpo-display-"][class*="yotpo-device-"][style].yotpo-device-mobile .yotpo-filters-container .yotpo-filters-top-panel {
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style].yotpo-device-mobile .yotpo-filters-container .yotpo-filters-top-panel .yotpo-search-filter {
+    max-width: 100%;
+    flex-basis: 100%;
+    margin: 0;
+    width: 100%;
+}
+
 [class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-filters-container .yotpo-filters-top-panel [class$="filter-container"] label input,
-[class*="yotpo-display-"][class*="yotpo-device-"].yotpo-device-mobile #yotpo-mobile-filters-popup [class$="filter"] input {
+[class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-filters-container .yotpo-filters-top-panel .yotpo-media-filter .yotpo-media-select,
+[class*="yotpo-display-"][class*="yotpo-device-"].yotpo-device-mobile #yotpo-mobile-filters-popup [class$="filter"] input,
+[class*="yotpo-display-"][class*="yotpo-device-"].yotpo-device-mobile #yotpo-mobile-filters-popup [class$="filter"] button {
     border-radius: 5px;
-    border: 1px solid var(--YotpoPrimaryColor);
+    border: 1px solid var(--YotpoPrimaryColor) !important;
 }
 
 [class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-filters-container .yotpo-filters-top-panel .yotpo-mobile-filters-btn {
@@ -202,7 +257,7 @@
 [class*="yotpo-display-"][class*="yotpo-device-"].yotpo-device-mobile #yotpo-mobile-filters-popup .yotpo-mobile-filters-popup-header {
     padding: 20px;
     position: static;
-    border-bottom: 1px solid #e3e3e3;
+    /* border-bottom: 1px solid #e3e3e3; */
     box-sizing: border-box;
     justify-content: space-between;
 }
@@ -246,6 +301,10 @@
     column-gap: 5px;
 }
 
+[class*="yotpo-display-"][class*="yotpo-device-"][style].yotpo-device-mobile .yotpo-reviews-list .yotpo-review {
+    margin-bottom: 20px;
+}
+
 [class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-reviews-list {
     border-top: 1px solid #eaeaea;
 }
@@ -257,11 +316,16 @@
 
 [class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-reviews-list .yotpo-review-left-panel {
     flex-basis: unset;
-    width: 230px;
+    width: 300px;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-reviews-list .yotpo-review-left-panel .yotpo-review-customer-questions-container {
+    width: auto;
 }
 
 [class*="yotpo-display-"][class*="yotpo-device-"][style].yotpo-device-mobile .yotpo-reviews-list .yotpo-review-left-panel {
     width: auto;
+    min-width: 0;
 }
 
 [class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-reviews-list .yotpo-review-left-panel .yotpo-reviewer-details-verified {
@@ -295,9 +359,19 @@
 }
 
 [class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-reviews-list .yotpo-review-center-panel {
-    width: calc(100% - 350px);
+    width: calc(100% - 450px);
     flex-basis: auto;
     padding: 0;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style].yotpo-device-laptop .yotpo-reviews-list .yotpo-review-center-panel .yotpo-review-rating-title {
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style].yotpo-device-laptop .yotpo-reviews-list .yotpo-review-center-panel .yotpo-review-rating-title .yotpo-review-title {
+    margin: 0;
+    flex-basis: auto;
 }
 
 [class*="yotpo-display-"][class*="yotpo-device-"][style].yotpo-device-mobile .yotpo-reviews-list .yotpo-review-center-panel {
@@ -312,13 +386,18 @@
     margin: 0;
 }
 
+[class*="yotpo-display-"][class*="yotpo-device-"][style].yotpo-device-mobile .yotpo-reviews-list .yotpo-review-center-panel .yotpo-review-questions-mobile-panel,
+[class*="yotpo-display-"][class*="yotpo-device-"][style].yotpo-device-mobile .yotpo-reviews-list .yotpo-review-center-panel .yotpo-review-questions-mobile-panel .yotpo-review-question {
+    margin: 0;
+}
+
 [class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-reviews-list .yotpo-review-center-panel .yotpo-review-content .sr-only {
     display: none;
 }
 
 [class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-reviews-list .yotpo-review-center-panel .yotpo-review-comment {
     width: 100%;
-    flex-basis: 100%;
+    flex-basis: auto;
 }
 
 [class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-reviews-list .yotpo-review-center-panel .yotpo-review-comment .yotpo-comment-avatar {
@@ -389,6 +468,15 @@
     padding: 0;
 }
 
+[class*="yotpo-display-"][class*="yotpo-device-"][style] #newReviewFormModal footer.form-footer .yotpo-terms-and-conditions-container .yotpo-new-input-validation {
+    font-size: 0;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style] #newReviewFormModal footer.form-footer .yotpo-terms-and-conditions-container .yotpo-new-input-validation::before {
+    content: '*nödvändig';
+    font-size: 12px;
+}
+
 [class*="yotpo-display-"][class*="yotpo-device-"][style] #newReviewFormModal footer.form-footer .yotpo-terms-and-conditions-container label.yotpo-checkbox-label {
     font-size: 12px;
 }
@@ -400,6 +488,7 @@
 [class*="yotpo-display-"][class*="yotpo-device-"][style] #newReviewFormModal #modalDescription {
     box-sizing: border-box;
     padding: 0;
+    margin: 0 20px;
 }
 
 [class*="yotpo-display-"][class*="yotpo-device-"].yotpo-device-mobile #newReviewFormModal {}
@@ -425,6 +514,15 @@
 
 [class*="yotpo-display-"][class*="yotpo-device-"].yotpo-device-mobile #newReviewFormModal footer.form-footer .yotpo-terms-and-conditions-container {
     flex-wrap: wrap;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style] #newReviewFormModal #modalDescription .yotpo-uploaded-images {}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style] #newReviewFormModal #modalDescription .yotpo-uploaded-images .yotpo-image-delete-button {}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style] #newReviewFormModal #modalDescription .yotpo-uploaded-images .yotpo-image-delete-button .yotpo-delete-image-icon {
+    width: 8px;
+    height: 8px;
 }
 
 /* Q&A Form */

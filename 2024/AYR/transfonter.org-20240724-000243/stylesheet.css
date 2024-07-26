@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Chronicle Display';
+    src: url('ChronicleDisplay-Roman.woff2') format('woff2'),
+        url('ChronicleDisplay-Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lasiver';
+    src: url('Lasiver-Regular.woff2') format('woff2'),
+        url('Lasiver-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lasiver';
+    src: url('Lasiver-Medium.woff2') format('woff2'),
+        url('Lasiver-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -322,7 +322,15 @@
   /* Filter section */
   [class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-filters-container {}
   
-  [class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-filters-container .yotpo-filters-top-panel {}
+  [class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-filters-container .yotpo-filters-top-panel {
+      flex-basis: auto;
+      column-gap: 11px;
+  }
+  
+  [class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-filters-container .yotpo-filters-top-panel > [class*="filter-container"] {
+      margin: 0;
+      flex-basis: unset;
+  }
   
   [class*="yotpo-display-"][class*="yotpo-device-"][style].yotpo-device-mobile .yotpo-filters-container .yotpo-filters-top-panel {
       flex-direction: column;
@@ -721,4 +729,30 @@
   
   [class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-filters-container .yotpo-filters-container-inner .yotpo-custom-questions-filters .yotpo-custom-questions-filters-wrapper {}
   
-  [class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-filters-container .yotpo-filters-container-inner .yotpo-custom-questions-filters .yotpo-custom-questions-filters-wrapper .yotpo-custom-questions-filter {}
+  [class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-filters-container .yotpo-filters-container-inner .yotpo-custom-questions-filters .yotpo-custom-questions-filters-wrapper .yotpo-custom-questions-filter {
+  }
+  
+  [class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-filters-container .yotpo-filters-container-inner .yotpo-custom-questions-filters .yotpo-custom-questions-filters-wrapper .yotpo-custom-questions-filter .yotpo-dropdown-closable {
+  }
+  
+  [class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-filters-container .yotpo-filters-container-inner .yotpo-custom-questions-filters .yotpo-custom-questions-filters-wrapper .yotpo-custom-questions-filter .yotpo-dropdown-closable .yotpo-dropdown-base {
+  }
+  
+  [class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-filters-container .yotpo-filters-container-inner .yotpo-custom-questions-filters .yotpo-custom-questions-filters-wrapper .yotpo-custom-questions-filter .yotpo-dropdown-closable .yotpo-dropdown-content-wrapper {
+      border-radius: 0;
+  }
+  
+  [class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-filters-container .yotpo-filters-container-inner .yotpo-custom-questions-filters .yotpo-custom-questions-filters-wrapper .yotpo-custom-questions-filter .yotpo-dropdown-closable .yotpo-dropdown-base .yotpo-dropdown-placeholder {
+      border-radius: 5px;
+      border: 1px solid var(--YotpoPrimaryColor) !important;
+  }
+  
+  [class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-filters-container .yotpo-filters-top-panel > [class*="filter-container"] .yotpo-dropdown-content {background: #fff !important;}
+  
+  [class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-filters-container .yotpo-filters-top-panel > [class*="filter-container"] .yotpo-dropdown-base {
+      width: 211px;
+  }
+  
+  [class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-filters-container .yotpo-filters-top-panel > [class*="filter-container"] [class$="select"] {
+      width: 211px;
+  }

@@ -1,0 +1,55 @@
+Footer in the email app icons doesn't have a link
+--> are there any specific link for their Email App Icons on the footer? Can you provide them? Thanks!
+
+Question - This review from the email: should it have the same questions as if you're making a review from the site?
+--> The questions will depends on the "tags" from Custom Questions on their Custom Questions Form. You can check this inside the B2B under Custom Questions Form, there will be few Custom Questions there where those questions will show up depends on the tags provided on that form.
+
+In the ""Write a Review"" modal, when hoevering over the stars, it creates a large white spacing between the stars and the borders, are you guys able to fix this?
+--> Done
+
+On these drop downs, can we just get rid of the green checkmark?
+--> Done
+
+Beauty products are showing sizing recommendation under product quality slider
+--> Can you elaborate the issue here? These are only a generated text based on what's listed on the Custom Question Form.
+
+Incentivized message incorrect update it to "This shopper received a discount for submitting a review"
+--> Done
+
+Review confirmation landing page: 
+1. Remove ""Tell Us What's Up"" under logo
+--> 1. Done
+2. "New Arrivals" links to homepage
+--> 2. Is this meant to be on homepage or to their New Arrivals Page? This was already linked to their homepage
+
+Desktop PDP Reviews - Filter Dropdowns
+- Style all drop downs to work like ""Sort By""
+- Adjust the wrrapping (""ABOUT MY CURVES"") breaks too early to the next line below
+--> Not Doable (Widget Structuring Problem, can't be solved by CSS)
+--> Please also be take note that the Custom Questions text are system generated.
+
+Desktop PDP Reviews - About My Curves rating
+- remove the separation between ""About My Curves:"" and the rating (""Some Curves"")
+--> Not Doable (Widget Structuring Problem, can't be solved by CSS).
+--> Please also be take note that the Custom Questions text are system generated.
+
+Desktop PDP Reviews - Pagination Prev/Next buttons
+- update colors for disabled state to:
+
+background = #e4e4e4
+arrow = #6e6e6e
+
+to keep UI consistent to REV branding
+--> Done
+
+Desktop PDP - Write A Review Modal
+- Invalid Submission: Can we scroll the form back to the top if submission is invalid
+--> Not Doable (This is already functionality request)
+
+Desktop PDP - Write A Review Modal
+- EMAIL ADDRESS + DISPLAY NAME field: copy below the label disappears at invalid/empty state
+--> Done
+
+Desktop PDP - Write A Review Modal
+- EMAIL ADDRESS: copy below the label disappears as im inputting text
+--> Done

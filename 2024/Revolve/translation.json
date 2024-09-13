@@ -1,0 +1,18 @@
+{
+  "labels": {
+    "ReviewsMainWidget": {
+      "en": {
+        "write-a-review-button-text": "Write A Review",
+        "star-rating-headline-text": "Rate this item",
+        "review-content-placeholder-text": "tell us what you like or dislike",
+        "review-headline-placeholder-text": "summarize your thoughts",
+        "review-name-headline-text": "Display Name",
+        "review-email-headline-text": "Email Address",
+        "review-email-default-message-text": "your email will not be displayed",
+        "review-images-headline-text": "Upload photos & videos",
+        "upload-button-text": "Add Photos/Videos",
+        "review-images-default-message-text": "Upload up to 10 images and 2 videos. Max file size: 2GB"
+      }
+    }
+  }
+}

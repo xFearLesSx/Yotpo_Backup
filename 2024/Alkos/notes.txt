@@ -1,0 +1,28 @@
+6RlZYTnX9BtjT6JLz1OC7FRG161u726ld4QQptt4 - Kalley Staging - new lp
+lEEivfhiIH8iiFCQvwbfq5jHoWDtD6uLmmpNvP1F - Kalley Production - old lp
+
+2XUCZ06pXiXXPWJ81pzpignVirXOXdShoPEIdFis - Alkotso Staging
+RLyMqbdTOZKQpib0my4aigX84TiDqpFXeYeBIwbn - Alkotso Production
+LP URL : https://landing-pages.yotpo.com/custom/RLyMqbdTOZKQpib0my4aigX84TiDqpFXeYeBIwbn/1/#/review?reviewer_token=fake&appkey=RLyMqbdTOZKQpib0my4aigX84TiDqpFXeYeBIwbn&utm_source=map&utm_medium=email&utm_campaign=map_traffic_success_failure_delayed&email_type=reminder&b2c_store_logo_url=https:%2F%2Fcdn-yotpo-images-production.yotpo.com%2FAccount%2F137540%2F171009763%2Flogo.jpg%3F1618870759&account_logo=https:%2F%2Fcdn-yotpo-images-production.yotpo.com%2FAccount%2F137540%2F171009763%2Flogo.jpg%3F1618870759&skip_share=false&review_images=true&review_title_required=true&review_accept_one_field=true&domain_key=99024&stars_color=FDC705&font_color=525252&header_color=FFFFFF&template=RLyMqbdTOZKQpib0my4aigX84TiDqpFXeYeBIwbn&mail_language=es&white_label=full_white_label&form_id=33984&mandatories=--56404&demo=true&submission_type=in_mail_form&review_score=5&review_title=&review_content=
+
+ELeAIz5NBRv91BxbyH7ehFPcGTTOULJkB5UsDZ92 - Alkompar Staging
+7bg71ngM6l19z98wHDHkeA5PFMp4DSg1ezp2G40j - Alkompar Production
+LP URL : https://landing-pages.yotpo.com/custom/7bg71ngM6l19z98wHDHkeA5PFMp4DSg1ezp2G40j/1/#/review?reviewer_token=fake&appkey=7bg71ngM6l19z98wHDHkeA5PFMp4DSg1ezp2G40j&utm_source=map&utm_medium=email&utm_campaign=map_traffic_success_failure_delayed&email_type=reminder&b2c_store_logo_url=https:%2F%2Fcdn-yotpo-images-production.yotpo.com%2FAccount%2F148992%2F168303667%2Flogo.png%3F1617074364&account_logo=https:%2F%2Fcdn-yotpo-images-production.yotpo.com%2FAccount%2F148992%2F168303667%2Flogo.png%3F1617074364&skip_share=false&review_images=true&review_title_required=true&review_accept_one_field=true&domain_key=83364&stars_color=FDC705&font_color=525252&header_color=FFFFFF&template=7bg71ngM6l19z98wHDHkeA5PFMp4DSg1ezp2G40j&mail_language=es&white_label=full_white_label&form_id=33451&mandatories=--55728&demo=true&submission_type=in_mail_form&review_score=5&review_content=&review_title=
+
+h0aejNRQmgNm0ug2cuLvvstTnHxgxSdiv2WvKDhz - Ktronix Staging
+1F66iuLpqA898wvntUV3yFjvKcuaPA7jabAh9pYL - Ktronix Production
+LP URL : https://landing-pages.yotpo.com/custom/1F66iuLpqA898wvntUV3yFjvKcuaPA7jabAh9pYL/1/#/review?reviewer_token=fake&appkey=1F66iuLpqA898wvntUV3yFjvKcuaPA7jabAh9pYL&utm_source=map&utm_medium=email&utm_campaign=map_traffic_success_failure_delayed&email_type=reminder&b2c_store_logo_url=https:%2F%2Fcdn-yotpo-images-production.yotpo.com%2FAccount%2F148991%2F168304457%2Flogo.png%3F1617076657&account_logo=https:%2F%2Fcdn-yotpo-images-production.yotpo.com%2FAccount%2F148991%2F168304457%2Flogo.png%3F1617076657&skip_share=false&review_images=true&review_title_required=true&review_accept_one_field=true&domain_key=97856&stars_color=FDC705&font_color=525252&header_color=FFFFFF&template=1F66iuLpqA898wvntUV3yFjvKcuaPA7jabAh9pYL&mail_language=es&white_label=full_white_label&form_id=33453&mandatories=--55730&demo=true&submission_type=in_mail_form&review_score=5&review_title=&review_content=
+
+
+
+Icons URL : 
+https://media.aws.alkomprar.com/ymarketingcolcomercio/Ktronix/email-marketing/icon-facebook-AK.png
+http://media.aws.alkomprar.com/ymarketingcolcomercio/Ktronix/email-marketing/icon-twitter-AK.png
+http://media.aws.alkomprar.com/ymarketingcolcomercio/Ktronix/email-marketing/icon-youtube-AK.png
+
+
+APP_KEYS: "RLyMqbdTOZKQpib0my4aigX84TiDqpFXeYeBIwbn" Alkotso
+APP_KEYS: "7bg71ngM6l19z98wHDHkeA5PFMp4DSg1ezp2G40j" Alkompar
+APP_KEYS: "1F66iuLpqA898wvntUV3yFjvKcuaPA7jabAh9pYL" Ktronix
+
+APP_KEYS: "lEEivfhiIH8iiFCQvwbfq5jHoWDtD6uLmmpNvP1F" Kalley
